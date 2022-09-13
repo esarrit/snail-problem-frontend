@@ -1,14 +1,18 @@
 <template>
-  <div class="gridContainer">
-    <ag-grid-vue
-      style="height: 500px"
-      class="ag-theme-alpine-dark"
-      @grid-ready="onGridReady"
-      :columnDefs="columnDefs"
-      :modules="modules"
-    >
-    </ag-grid-vue>
-  </div>
+  <ag-grid-vue
+    style="
+      height: 500px;
+      width: 100%;
+      margin-top: 30px;
+      border: 2px solid hsla(160, 100%, 37%, 1);
+      border-radius: 5px;
+    "
+    class="ag-theme-alpine-dark"
+    @grid-ready="onGridReady"
+    :columnDefs="columnDefs"
+    :modules="modules"
+  >
+  </ag-grid-vue>
 </template>
 <script>
 import moment from "moment";
@@ -27,20 +31,14 @@ export default {
         {
           headerName: "Date",
           field: "DATE",
-          sortable: true,
           valueFormatter: dateFormatter,
           maxWidth: 150,
-        },
-        { headerName: "Well Height", field: "H", type: "numericColumn" },
-        {
-          headerName: "Day Progress",
-          field: "U",
           sortable: true,
-          filter: true,
-          type: "numericColumn",
         },
-        { headerName: "Night Slide", field: "D", type: "numericColumn" },
-        { headerName: "Fatigue Factor", field: "F", type: "numericColumn" },
+        { headerName: "Well Height", field: "H" },
+        { headerName: "Day Progress", field: "U", sortable: true },
+        { headerName: "Night Slide", field: "D" },
+        { headerName: "Fatigue Factor", field: "F" },
         { headerName: "Result", field: "result", filter: true },
       ],
       modules: [ClientSideRowModelModule],
@@ -74,12 +72,3 @@ window.dateFormatter = function dateFormatter(params) {
   return moment(params.value).format("MM/DD/YYYY");
 };
 </script>
-
-<style>
-.gridContainer {
-  display: block;
-  margin-top: 30px;
-  border: 2px solid hsla(160, 100%, 37%, 1);
-  border-radius: 5px;
-}
-</style>
