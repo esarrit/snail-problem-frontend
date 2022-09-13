@@ -6,10 +6,15 @@
     "build": "vite build",
     "preview": "vite preview --port 4173",
     "postinstall": "npm run build",
-    "start": "node server.js" 
+    "start": "node server.js"
   },
   "dependencies": {
+    "@ag-grid-community/client-side-row-model": "25.0.0",
+    "@ag-grid-community/core": "25.0.0",
+    "@ag-grid-community/vue3": "25.0.0",
+    "axios": "^0.21.1",
     "express": "^4.18.1",
+    "moment": "^2.29.4",
     "serve-static": "^1.15.0",
     "vue": "^3.2.38",
     "vue-router": "^4.1.5"
