@@ -1,3 +1,10 @@
+<!-- 
+  This view shows a grid of all escape attempts made by the snail. 
+  The data is retrieved from the snailAttempts API endpoint. 
+  The grid provides data binding, so it reflects any new attempts made 
+  by the snail automatically. 
+-->
+
 <template>
   <ag-grid-vue
     style="
@@ -14,6 +21,7 @@
   >
   </ag-grid-vue>
 </template>
+
 <script>
 import moment from "moment";
 import { AgGridVue } from "@ag-grid-community/vue3";

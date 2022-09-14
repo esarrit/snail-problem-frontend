@@ -1,3 +1,10 @@
+<!-- 
+  This component defines a basic input field within a form. 
+  It has multiple capabilities such as data binding, the ability
+  to handle different kinds of input, and the ability to show a 
+  placeholder message, a label, among others. 
+-->
+
 <template>
   <label class="fieldLabel" v-if="label">{{ label }}</label>
   <input

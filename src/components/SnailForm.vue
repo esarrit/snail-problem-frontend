@@ -1,6 +1,8 @@
-<script setup>
-import BaseInput from "./BaseInput.vue";
-</script>
+<!-- 
+  This is the form component of the application. It contains the visual components
+  of the form as well as the behavior - users are required to provide all of the 
+  fields in the form, all fields must be numbers from 1 to 100 (inclusive). 
+-->
 
 <template>
   <div class="heading" v-if="!formSubmitted">
@@ -85,6 +87,7 @@ import BaseInput from "./BaseInput.vue";
 </template>
 
 <script>
+import BaseInput from "./BaseInput.vue";
 import axios from "axios";
 
 export default {

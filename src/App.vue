@@ -3,6 +3,7 @@ import { RouterLink, RouterView } from "vue-router";
 import SnailProblem from "./components/SnailProblem.vue";
 </script>
 
+<!-- This is the main component of the app -->
 <template>
   <header>
     <div class="wrapper">

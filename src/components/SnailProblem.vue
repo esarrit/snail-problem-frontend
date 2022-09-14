@@ -1,3 +1,8 @@
+<!-- 
+  This component is for greeting the user and showing information 
+  about the snail problem. 
+-->
+
 <script setup>
 defineProps({
   msg: {
