@@ -3,7 +3,7 @@
   of the form as well as the behavior - users are required to provide all of the 
   fields in the form, all fields must be numbers from 1 to 100 (inclusive). 
 -->
-<script>
+<script setup>
 import BaseInput from "./BaseInput.vue";
 </script>
 
