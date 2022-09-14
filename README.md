@@ -1,7 +1,3 @@
-# snail-app-vue
-
-This template should help get you started developing with Vue 3 in Vite.
-
 # The Snail Problem
 
 A snail is at the bottom of a well of H height and wants to climb to the top. The snail can climb U feet while the sun is up, but slides down D feet at night while sleeping. The snail has a fatigue factor of F %, which means that on each successive day the snail climbs F % * H = W feet less than it did the previous day. The distance lost to fatigue is always F % of the *first\* day's climbing distance. All four numbers must be between 1 and 100, inclusive.
